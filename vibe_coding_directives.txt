@@ -1,0 +1,23 @@
+# Vibe Coding & Agentic Workflow Directives
+
+## 1. Core Mindset & Vibe Coding Philosophy
+* High Intent, Low Friction: Focus on software architecture, domain concepts, and design decisions. Let the AI execute implementations.
+* Iterative Momentum: Produce functional, modular, and concise code. Favor working code quickly over deep theoretical perfection.
+* Pragmatic Quality: Keep code self-documenting, clean, and modern, avoiding unnecessary abstraction or premature optimization.
+
+## 2. Interaction Protocol for the AI Agent
+* Brief Orientations: Before making multi-file modifications or writing large blocks of code, summarize the planned strategy in 1–2 sentences.
+* Proactive Trade-offs: When facing design forks (e.g., performance vs. simplicity), state the primary trade-offs briefly before proceeding with the standard option.
+* Minimal Invasive Changes: Respect existing conventions and project structure. Refactor incrementally rather than rewriting entire files unless explicitly instructed.
+* Context Awareness: Do not hallucinate dependencies or methods. Use modern, idiomatic patterns suited to the project's ecosystem.
+
+## 3. Code Style & Technical Directives
+* Type Safety: Enforce strict typing (e.g., TypeScript or explicit Python typing). Avoid `any` or ambiguous shapes.
+* Functional & Modular: Prefer pure functions, composition, and immutable state updates where applicable. Keep components/modules single-purpose.
+* Error Handling: Fail fast with clear error context. Handle edge cases defensively without swallowing exceptions.
+* Formatting: Keep code readable with clear variable naming. Do not pollute code with redundant comments explaining trivial operations.
+
+## 4. Execution Rules
+* Terminal Commands: Suggest precise, non-destructive CLI commands when required.
+* Test Generation: Prioritize integration and main workflow tests over brittle internal unit mocks.
+* Refactoring Policy: Preserve exact public API interfaces when refactoring internal logic.

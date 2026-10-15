@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0",
+  "agent_mode": "computer_use_enabled",
+  "display": {
+    "width": 1920,
+    "height": 1080,
+    "display_number": 1
+  },
+  "capabilities": {
+    "gui_control": {
+      "enabled": true,
+      "allow_mouse_click": true,
+      "allow_mouse_drag": true,
+      "allow_keyboard_type": true,
+      "screenshot_interval_ms": 500
+    },
+    "bash_execution": {
+      "enabled": true,
+      "timeout_seconds": 120,
+      "working_directory": "./"
+    },
+    "browser_control": {
+      "enabled": true,
+      "headless": false
+    }
+  },
+  "security_sandbox": {
+    "require_user_confirmation_for": [
+      "file_deletion",
+      "external_http_requests",
+      "terminal_sudo_commands"
+    ],
+    "blocked_actions": [
+      "system_shutdown",
+      "modifying_system_files"
+    ]
+  }
+}
